@@ -1,0 +1,31 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.8'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+	implementation('org.springframework.cloud:spring-cloud-starter-sleuth:3.1.7') {
+		exclude group: 'org.springframework.cloud', module: 'spring-cloud-sleuth-brave'
+	}
+	implementation 'org.springframework.cloud:spring-cloud-sleuth-otel-autoconfigure:1.1.2'
+	implementation 'io.opentelemetry:opentelemetry-exporter-otlp:1.23.1'
+	implementation 'org.springframework.cloud:spring-cloud-dependencies:2021.0.5'
+	implementation 'org.springframework.cloud:spring-cloud-sleuth-otel-dependencies:1.1.2'
+
+	}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

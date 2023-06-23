@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.EngineService.Domain.EngineTypeTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-03-04T20:41:58" hostname="LAP-JCERVERA" time="0.06">
+  <properties/>
+  <testcase name="setCreationDateTime_shouldModifyEngineTypeCreationDateTime_whenProvidingValidValue()" classname="com.example.EngineService.Domain.EngineTypeTest" time="0.001"/>
+  <testcase name="constructor_shouldCreateExpectedInstance_whenProvidingValidEngineTypeCode()" classname="com.example.EngineService.Domain.EngineTypeTest" time="0.003"/>
+  <testcase name="setDescription_shouldModifyEngineTypeDescription_whenProvidingValidValue()" classname="com.example.EngineService.Domain.EngineTypeTest" time="0.002"/>
+  <testcase name="[1] invalidEngineTypeCode=null" classname="com.example.EngineService.Domain.EngineTypeTest" time="0.004"/>
+  <testcase name="[2] invalidEngineTypeCode=" classname="com.example.EngineService.Domain.EngineTypeTest" time="0.001"/>
+  <testcase name="[3] invalidEngineTypeCode= " classname="com.example.EngineService.Domain.EngineTypeTest" time="0.001"/>
+  <testcase name="constructor_shouldThrowIllegalArgumentException_whenProvidingEngineTypeCodeStartingWithC()" classname="com.example.EngineService.Domain.EngineTypeTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
